@@ -1,6 +1,13 @@
 apiVersion: 1.0.0
 metadata:
   generateName: Merlin-
+projects:
+  - name: merlin-example
+    source:
+      location: 'git@github.com:edmundreinhardt/bob-recursive-example.git'
+      branch: master
+      type: git
+      sparseCheckoutDir: complete
 components:
   - type: chePlugin
     id: ibm/ibmideveloper/latest
